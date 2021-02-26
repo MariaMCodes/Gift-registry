@@ -13,12 +13,13 @@ library(RColorBrewer)
 ui <- fluidPage(
   fluidRow(
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
-    h3(strong("Apple's Birthday Gift Registry"), align = "center", style = "color:#487AA1"),
+    h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), align = "center", style = "color:#487AA1"),
     HTML('<center><img src="Header2.png" height="220", width="400"></center>'),  # used HTML to align to centre
     #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
     #dashboardBody(fluidRow(box(title = "Ami Paris", width = 12, background = "maroon", solidHeader = TRUE, "Ami de Coeur patch jumper")))
+    
     #### AMI PARIS
-    fluidRow(column(h5(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    fluidRow(column(h4(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:2px")),
     br(),
     fluidRow(
       column(width = 4, img(src = "Ami_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -40,7 +41,7 @@ ui <- fluidPage(
     
     #### APPLE
     br(),
-    fluidRow(column(h5(p(strong("APPLE"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    fluidRow(column(h4(p(strong("APPLE"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:2px")),
     br(),
     fluidRow(
       column(width = 4, img(src = "Ipad.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -62,7 +63,7 @@ ui <- fluidPage(
     
     #### BALMAIN
     br(),
-    fluidRow(column(h5(p(strong("BALMAIN"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    fluidRow(column(h4(p(strong("BALMAIN"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:2px")),
     br(),
     fluidRow(
       column(width = 4, img(src = "Balmain_beige.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -79,13 +80,37 @@ ui <- fluidPage(
     
     #### GUCCI
     br(),
-    fluidRow(column(h5(p(strong("GUCCI"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    fluidRow(column(h4(p(strong("GUCCI"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:2px")),
     br(),
     fluidRow(
       column(width = 4, img(src = "Gucci.jpg", height="140", width="140"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       column(width = 8, p(strong("Description:"), "Disney Mickey print oversized T-shirt", br(), strong("Colour:"), "Off-White", br(), strong("Size:"), "XXS", br(), strong("Price:"), "$790", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/gucci-x-disney-mickey-print-oversized-t-shirt-item-15013860.aspx", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays discount available"), style = "color:black"), style = "background-color:#bee3d9;padding:13px;border-radius:2px")),
+    br(),
+    
+    #### HERMES
+    br(),
+    fluidRow(column(h4(p(strong("HERMES"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "H_etoupe.jpg", height="80", width="80"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "O'Kelly Pendant, Small Model", br(), strong("Colour:"), "Étoupe", br(), strong("Price:"), "$435", br(), 
+                          tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC18/", strong("Link to this item")), 
+                          target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:13px;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "H_gold.jpg", height="80", width="80"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "O'Kelly Pendant, Small Model", br(), strong("Colour:"), "Gold", br(), strong("Price:"), "$435", br(), 
+                          tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC37/", strong("Link to this item")), 
+                          target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:13px;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Bracelet.jpg", height="100", width="100"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Glenan Double Tour Bracelet", br(), strong("Colour:"), "Étoupe", br(), strong("Size:"), "T1", br(), strong("Price:"), "$435", br(), 
+                          tags$a(href = "https://www.hermes.com/au/en/product/glenan-double-tour-bracelet-H071689Fv18T2/", strong("Link to this item")), 
+                          target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:13px;border-radius:2px")),
+    br(),
     br(),
   )
 )
