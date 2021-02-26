@@ -4,10 +4,13 @@ install.packages("shinydashboard")
 library(shinydashboard)
 install.packages("bootstrap")
 library(bootstrap)
+install.packages("shinyWidgets")
+library(shinyWidgets)
 
 
 ui <- fluidPage(
   fluidRow(
+    setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
     h3("Apple's Birthday Gift Registry", align = "center", style = "color:#487AA1"),
     HTML('<center><img src="Header.png" height="220", width="400"></center>'),  # used HTML to align to centre
     #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
