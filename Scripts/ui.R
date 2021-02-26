@@ -13,6 +13,7 @@ ui <- fluidPage(
     HTML('<center><img src="Header2.png" height="220", width="400"></center>'),  # used HTML to align to centre
     #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
     #dashboardBody(fluidRow(box(title = "Ami Paris", width = 12, background = "maroon", solidHeader = TRUE, "Ami de Coeur patch jumper")))
+    #### AMI PARIS
     fluidRow(column(h5(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
     br(),
     fluidRow(
@@ -32,8 +33,61 @@ ui <- fluidPage(
       column(width = 8, p(strong("Description:"), "Ami de Coeur jumper", br(), strong("Colour:"), "Cognac Brown", br(), strong("Size:"), "XS", br(), strong("Price:"), "$309", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-jumper-item-16051859.aspx?size=19", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px")),
+    
+    #### APPLE
+    br(),
+    fluidRow(column(h5(p(strong("APPLE"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Ipad.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Ipad Pro 2021 (EXPECTED RELEASE DATE Q1, 2021)", br(), strong("Colour:"), "Space Gray", br(), strong("Size:"), "11 inch (128 GB)", br(), strong("Price:"), "~$1329 (Based on 2020 model)", br(), 
+                          tags$a(href = "https://www.apple.com/au/shop/buy-ipad/ipad-pro", strong("Link to this item")), 
+                          target = "blank", br(), br(), em("Can use the trade-in value from my 2017 Ipad Pro"), style = "color:black"), style = "background-color:#f0e1d2;padding:13px;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Pencil.jpg", height="60", width="80"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Apple Pencil (2nd Generation)", br(), strong("Price:"), "$199", br(), 
+                          tags$a(href = "https://www.apple.com/au/shop/product/MU8F2ZA/A/apple-pencil-2nd-generation", strong("Link to this item")), 
+                          target = "blank", style = "color:black"), style = "background-color:#f0e1d2;padding:13px;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Smart_folio.jpg", height="100", width="100"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Smart Folio for Ipad Pro (2nd Generation)", br(), strong("Colour:"), "Black", br(), strong("Size:"), "11-inch", br(), strong("Price:"), "$119", br(), 
+                          tags$a(href = "https://www.apple.com/au/shop/product/MXT42FE/A/smart-folio-for-ipad-pro-11-inch-2nd-generation-black?afid=p238%7CsmC6Ye47V-dc_mtid_18707vxu38484_pcrid_55471952566_pgrid_15222165886_&cid=aos-au-kwgo-pla-btb--slid---product-MXT42-", strong("Link to this item")), 
+                          target = "blank", style = "color:black"), style = "background-color:#f0e1d2;padding:13px;border-radius:2px")),
+    
+    #### BALMAIN
+    br(),
+    fluidRow(column(h5(p(strong("BALMAIN"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Balmain_beige.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Teen embossed button knit jumper", br(), strong("Colour:"), "Beige", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
+                          tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-knit-jumper-item-16426609.aspx?size=18", strong("Link to this item")), 
+                          target = "blank", br(), br(), em("Unidays discount available"), style = "color:black"), style = "background-color:#c2c1ce;padding:13px;border-radius:2px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Balmain_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Teen embossed button crewneck jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
+                          tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-crewneck-jumper-item-16437943.aspx?size=18", strong("Link to this item")), 
+                          target = "blank", br(), br(), em("Unidays discount available"), style = "color:black"), style = "background-color:#c2c1ce;padding:13px;border-radius:2px")),
+    br(),
+    
+    #### GUCCI
+    br(),
+    fluidRow(column(h5(p(strong("GUCCI"), style = "text-align:center;color:black")), width = 12, style = "background-color:#cbeaee;border-radius:8px")),
+    br(),
+    fluidRow(
+      column(width = 4, img(src = "Gucci.jpg", height="140", width="140"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 8, p(strong("Description:"), "Disney Mickey print oversized T-shirt", br(), strong("Colour:"), "Off-White", br(), strong("Size:"), "XXS", br(), strong("Price:"), "$790", br(), 
+                          tags$a(href = "https://www.farfetch.com/au/shopping/women/gucci-x-disney-mickey-print-oversized-t-shirt-item-15013860.aspx", strong("Link to this item")), 
+                          target = "blank", br(), br(), em("Unidays discount available"), style = "color:black"), style = "background-color:#bee3d9;padding:13px;border-radius:2px")),
+    br(),
   )
 )
+
+
+
 
 
 
