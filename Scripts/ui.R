@@ -10,6 +10,7 @@ library(gotop)
 
 ui <- fluidPage(
   fluidRow(
+    column(width = 2),
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
     h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), align = "center", style = "color:#487AA1"),
     HTML('<center><img src="Header2.png" height="220", width="400"></center>'),  # used HTML to align to centre
@@ -167,19 +168,19 @@ ui <- fluidPage(
     
     #### using "gotop" package to scroll back to top
     use_gotop(), # add it inside the ui
-    # to customise Font Awesome cheveon up icon
+#    HTML(rep("&darr;<br/><br/>scroll down<br/><br/>"), style = "color:white"),
+    textOutput(""),
+    # to customise Font Awesome chevron up icon
     gotop::use_gotop(
       src = "fas fa-chevron-circle-up", # css class from Font Awesome
-      # color = "tomato", # color
-      opacity = 0.6, # transparency
+      color = "#487AA1", # color
+      opacity = 0.8, # transparency
       width = 40, # size
       appear = 100 # number of pixels before appearance
     ),
     
   )
 )
-
-
 
 
 
