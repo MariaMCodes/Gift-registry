@@ -8,6 +8,8 @@ install.packages("shinyWidgets")
 library(shinyWidgets)
 install.packages("RColorBrewer")
 library(RColorBrewer)
+install.packages("gotop")
+library(gotop)
 
 
 ui <- fluidPage(
@@ -166,6 +168,18 @@ ui <- fluidPage(
     br(),
     br(),
     br(),
+    
+    #### using "gotop" package to scroll back to top
+    use_gotop(), # add it inside the ui
+    # to customise Font Awesome cheveon up icon
+    gotop::use_gotop(
+      src = "fas fa-chevron-circle-up", # css class from Font Awesome
+      # color = "tomato", # color
+      opacity = 0.6, # transparency
+      width = 40, # size
+      appear = 100 # number of pixels before appearance
+    ),
+    
   )
 )
 
