@@ -18,7 +18,7 @@ ui <- fluidPage(
     fluidRow(
       column(width = 3,
              p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
-             p("test", align = "center"),
+             p(actionButton("action", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center", ),
              p("test", align = "center")),
       column(width = 6, HTML('<center><img src="Header2.png" height="220", width="400"></center>')),  # used HTML to align to centre
       #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
