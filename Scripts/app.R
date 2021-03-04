@@ -20,9 +20,11 @@ ui <- fluidPage(
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
     column(width = 2),
     h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), width = 8, align = "center", style = "color:#487AA1"),
+    br(),
     
     fluidRow(
-      column(width = 3,
+      column(width = 1),
+      column(width = 2,
              p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
              p(actionButton("action", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
              p(actionButton("action", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
