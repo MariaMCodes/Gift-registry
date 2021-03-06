@@ -26,13 +26,13 @@ ui <- fluidPage(
       column(width = 1),
       column(width = 2,
              p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
-             p(actionButton("action", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionButton("action", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
+             p(actionLink("action1", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action2", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action3", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action4", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action5", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+             p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
              
       column(width = 6, HTML('<center><img src="Header2.png" height="220", width="400"></center>')),  # used HTML to align to centre
       #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
@@ -209,7 +209,11 @@ ui <- fluidPage(
 
 
 server <- function(input, output, session) {
-  output$lookright <- renderText({ print("") })
+  output$lookright <- renderText({ print("") 
+    })
+  observeEvent(input$action1, {
+    output$text <- renderText({"AMI PARIS"})
+    })
 }
 
 shinyApp(ui=ui, server=server)
