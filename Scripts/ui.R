@@ -10,6 +10,18 @@ library(bootstrap)
 
 
 ui <- fluidPage(
+  htmlOutput("links"),
+  htmlOutput("formattedText"),
+  
+  
+  ## Testing action buttons using bootstrap
+  #  tags$a(href="#try", class="btn btn-default btn-sm", strong("Ami Paris"), style = "color:#487AA;background-color:#cbeaee;border-color:#cbeaee", align = "center"),
+  #  div(column(width = 1),
+  #      column(h4(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 10)),
+  
+  
+  
+  
   fluidRow(
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
     column(width = 2),
@@ -20,27 +32,41 @@ ui <- fluidPage(
       column(width = 1),
       column(width = 2,
              p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
-             p(actionLink("action1", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action2", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action3", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action4", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action5", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-             p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
+             
+             tags$a(href="#action1", class="btn btn-link btn-block", strong("Ami Paris"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action2", class="btn btn-link btn-block", strong("Apple"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action3", class="btn btn-link btn-block", strong("Balmain"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action4", class="btn btn-link btn-block", strong("Chanel"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action5", class="btn btn-link btn-block", strong("Gucci"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action6", class="btn btn-link btn-block", strong("Hermes"), style = "color:#487AA"), align = "center",
+             tags$a(href="#action7", class="btn btn-link btn-block", strong("Prada"), style = "color:#487AA"), align = "center",
+      ),
       
-      column(width = 6, HTML('<center><img src="Header2.png" height="220", width="400"></center>')),  # used HTML to align to centre
+             
+  #           p(actionLink("action1", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action2", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action3", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action4", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action5", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+  #           p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
+      
+      column(width = 6, HTML('<center><img src="Header2.png" height="310", width="500"></center>')),  # used HTML to align to centre
       #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
       #dashboardBody(fluidRow(box(title = "Ami Paris", width = 12, background = "maroon", solidHeader = TRUE, "Ami de Coeur patch jumper")))
       # tags$hr(), to add horizontal line
       column(width = 3)),
     br(),
     
-    
+  
   #### AMI PARIS
+  uiOutput("action1"),
   fluidRow(
     column(width = 1),
     column(h4(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
-  br(),
+  
+    
+    br(),
     fluidRow(
       column(width = 1),
       column(width = 4, img(src = "Ami_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -63,10 +89,13 @@ ui <- fluidPage(
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px")),
     
     #### APPLE
+    uiOutput("action2"),  
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("APPLE"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
+      
+  
     br(),
     fluidRow(
       column(width = 1),
@@ -90,10 +119,13 @@ ui <- fluidPage(
                           target = "blank", style = "color:black"), style = "background-color:#f0e1d2;padding:13px;border-radius:2px")),
     
     #### BALMAIN
+    uiOutput("action3"),  
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("BALMAIN"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
+
+   
     br(),
     fluidRow(
       column(width = 1),
@@ -110,11 +142,14 @@ ui <- fluidPage(
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#c2c1ce;padding:13px;border-radius:2px")),
     
     #### CHANEL
+    uiOutput("action4"), 
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("CHANEL"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
-    br(),
+      
+  
+   br(),
     fluidRow(
       column(width = 1),
       column(width = 4, img(src = "Chanel_shoes.jpg", height="120", width="145"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -122,11 +157,14 @@ ui <- fluidPage(
                           br(), em("Not available online. Please see Chanel Boutique for more details."), style = "color:black"), style = "background-color:#f9e2f3;padding:13px;border-radius:2px")),
     
     #### GUCCI
+    uiOutput("action5"), 
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("GUCCI"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
-    br(),
+       
+  
+  br(),
     fluidRow(
       column(width = 1),
       column(width = 4, img(src = "Gucci.jpg", height="140", width="140"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -135,11 +173,14 @@ ui <- fluidPage(
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#bee3d9;padding:13px;border-radius:2px")),
     
     #### HERMES
+    uiOutput("action6"), 
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("HERMES"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
-    br(),
+       
+  
+  br(),
     fluidRow(
       column(width = 1),
       column(width = 4, img(src = "H_etoupe.jpg", height="80", width="80"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -169,11 +210,14 @@ ui <- fluidPage(
                           target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:18px;border-radius:2px")),
     
     #### PRADA
+    uiOutput("action7"),  
     br(),
     fluidRow(
       column(width = 1),
       column(h4(p(strong("PRADA"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
-    br(),
+      
+  
+  br(),
     fluidRow(
       column(width = 1),
       column(width = 4, img(src = "Prada_shoes.jpg", height="95", width="150"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
@@ -186,7 +230,7 @@ ui <- fluidPage(
     
     #### using "gotop" package to scroll back to top
     use_gotop(), # add it inside the ui
-#    HTML(rep("&darr;<br/><br/>scroll down<br/><br/>"), style = "color:white"),
+    #    HTML(rep("&darr;<br/><br/>scroll down<br/><br/>")),
     textOutput(""),
     # to customise Font Awesome chevron up icon
     gotop::use_gotop(
@@ -199,31 +243,6 @@ ui <- fluidPage(
     
   )
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
