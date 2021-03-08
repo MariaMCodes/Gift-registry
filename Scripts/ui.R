@@ -39,7 +39,7 @@ ui <- fluidPage(
       #           p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
       #           p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
       
-      column(width = 6, HTML('<center><img src="Header2.png" height="310", width="500"></center>')),  # used HTML to align to centre
+      column(width = 6, HTML('<center><img src="Header2.png" height="270", width="450"></center>')),  # used HTML to align to centre
       #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
       #dashboardBody(fluidRow(box(title = "Ami Paris", width = 12, background = "maroon", solidHeader = TRUE, "Ami de Coeur patch jumper")))
       # tags$hr(), to add horizontal line
@@ -50,15 +50,18 @@ ui <- fluidPage(
       column(width = 1),
       column(width = 10,
 #            p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
-    tags$a(href="#action1", class="btn btn-link list-inline", strong("Ami Paris"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action2", class="btn btn-link list-inline", strong("Apple"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action3", class="btn btn-link list-inline", strong("Balmain"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action4", class="btn btn-link list-inline", strong("Chanel"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action5", class="btn btn-link list-inline", strong("Gucci"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action6", class="btn btn-link list-inline", strong("Hermes"), style = "color:#487AA"), align = "center",
-    tags$a(href="#action7", class="btn btn-link list-inline", strong("Prada"), style = "color:#487AA"), align = "center"), align = "center",
+    
+    div(class = "btn-toolbar pagination pagination-centered",           ## to add space between buttons and centre them
+    tags$a(href="#action1", class="btn btn-info btn-lg list-inline", strong("Ami Paris"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action2", class="btn btn-info btn-lg list-inline", strong("Apple"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action3", class="btn btn-info btn-lg list-inline", strong("Balmain"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action4", class="btn btn-info btn-lg list-inline", strong("Chanel"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action5", class="btn btn-info btn-lg list-inline", strong("Gucci"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action6", class="btn btn-info btn-lg list-inline", strong("Hermes"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action7", class="btn btn-info btn-lg list-inline", strong("Prada"), style = "background-color:#f69696;border-color:#f66767")), align = "center"),
     column(width = 1),
     ),
+  br(),
   
   #### AMI PARIS
   uiOutput("action1"),
