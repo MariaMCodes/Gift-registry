@@ -29,27 +29,15 @@ ui <- fluidPage(
     br(),
     
     fluidRow(
-      column(width = 1),
-      column(width = 2,
-             p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
-             
-             tags$a(href="#action1", class="btn btn-link btn-block", strong("Ami Paris"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action2", class="btn btn-link btn-block", strong("Apple"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action3", class="btn btn-link btn-block", strong("Balmain"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action4", class="btn btn-link btn-block", strong("Chanel"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action5", class="btn btn-link btn-block", strong("Gucci"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action6", class="btn btn-link btn-block", strong("Hermes"), style = "color:#487AA"), align = "center",
-             tags$a(href="#action7", class="btn btn-link btn-block", strong("Prada"), style = "color:#487AA"), align = "center",
-      ),
+      column(width = 3),
       
-             
-  #           p(actionLink("action1", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action2", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action3", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action4", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action5", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
-  #           p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
+      #           p(actionLink("action1", strong("Ami Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action2", strong("Apple"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action3", strong("Balmain"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action4", strong("Chanel"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action5", strong("Gucci"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action6", strong("Hermes"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center"),
+      #           p(actionLink("action7", strong("Paris"), style = "background-color:#cbeaee;border-color:#cbeaee;border-radius:1px"), align = "center")),
       
       column(width = 6, HTML('<center><img src="Header2.png" height="310", width="500"></center>')),  # used HTML to align to centre
       #img(src = "Header.png", align = "center", height = 200, width = 400) if not uing HTML but couldn't get it centred
@@ -58,6 +46,19 @@ ui <- fluidPage(
       column(width = 3)),
     br(),
     
+    fluidRow(
+      column(width = 1),
+      column(width = 10,
+#            p(strong("Brands"), align = "center", style = "color:white;background-color:#487AA1;border-radius:1px"),
+    tags$a(href="#action1", class="btn btn-link list-inline", strong("Ami Paris"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action2", class="btn btn-link list-inline", strong("Apple"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action3", class="btn btn-link list-inline", strong("Balmain"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action4", class="btn btn-link list-inline", strong("Chanel"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action5", class="btn btn-link list-inline", strong("Gucci"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action6", class="btn btn-link list-inline", strong("Hermes"), style = "color:#487AA"), align = "center",
+    tags$a(href="#action7", class="btn btn-link list-inline", strong("Prada"), style = "color:#487AA"), align = "center"), align = "center",
+    column(width = 1),
+    ),
   
   #### AMI PARIS
   uiOutput("action1"),
