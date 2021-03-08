@@ -7,6 +7,7 @@ library(RColorBrewer)
 install.packages("gotop")
 library(gotop)
 library(bootstrap)
+library("flipdownr")
 
 
 ui <- fluidPage(
@@ -20,12 +21,17 @@ ui <- fluidPage(
   #      column(h4(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 10)),
   
   
-  
-  
   fluidRow(
+    column(width = 12, 
+           flipdown(downto = "2021-04-21", id = "c1", theme = "light"), align = "center", style = "background-color:#487AA1;border-radius:2px;padding:10px")),
+  br(),
+  
+
+    
+    fluidRow(
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
     column(width = 12, HTML('<center><img src="Title3.png" height="70", width="800"></center>')),
-  ##    h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), width = 8, align = "center", style = "color:#487AA1"),
+    ##    h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), width = 8, align = "center", style = "color:#487AA1"),
     br(),
 
     
