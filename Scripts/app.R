@@ -30,9 +30,11 @@ ui <- fluidPage(
   
   fluidRow(
     setBackgroundImage(src = "Background2.jpg", shinydashboard = FALSE), # to add background image using shinyWidgets
-    column(width = 2),
-    h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), width = 8, align = "center", style = "color:#487AA1"),
+    column(width = 12, HTML('<center><img src="Title3.png" height="70", width="800"></center>')),
+##    h3(strong("APPLE'S BIRTHDAY GIFT REGISTRY"), width = 8, align = "center", style = "color:#487AA1"),
     br(),
+
+
     
     fluidRow(
       column(width = 3),
@@ -163,9 +165,9 @@ ui <- fluidPage(
     br(),
     fluidRow(
       column(width = 1),
-      column(width = 4, img(src = "Chanel_shoes.jpg", height="120", width="145"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 4, img(src = "Chanel_shoes2.png", height="110", width="140"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       column(width = 6, p(strong("Description:"), "Calfskin Womens Logo Sneakers", br(), strong("Colour:"), "Black/White", br(), strong("Size:"), "35.5", br(), strong("Price:"), "~$1350", br(), 
-                          br(), em("Not available online. Please see Chanel Boutique for more details."), style = "color:black"), style = "background-color:#f9e2f3;padding:13px;border-radius:2px")),
+                          br(), em("Not available online. Please see Chanel Boutique for more details."), style = "color:black"), style = "background-color:#f9e2f3;padding:8px;border-radius:2px")),
     
     #### GUCCI
     uiOutput("action5"), 
