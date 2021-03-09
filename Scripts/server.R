@@ -5,7 +5,6 @@ server <- function(input, output, session) {
   output$lookright <- renderText({ print("") 
   })
   
-  
   #  output$formattedText <- renderText ({
   #    HTML("<hr><br><span id='anchorid1'>Point to this anchor</span><br>>
   #    <a href='#anchorid1'>Go to this anchor</a><br>

@@ -20,11 +20,94 @@ ui <- fluidPage(
   #  div(column(width = 1),
   #      column(h4(p(strong("AMI PARIS"), style = "text-align:center;color:black")), width = 10)),
   
-  
   fluidRow(
-    column(width = 12, 
-           flipdown(downto = "2021-04-21", id = "c1", theme = "light"), align = "center", style = "background-color:#487AA1;border-radius:2px;padding:10px")),
+    fillRow(
+      div(style = "background-color:#75a6cc;border-radius:2px;padding:60px;width:103%;height:100%;"),
+      div(style = "background-color:#75a6cc;border-radius:2px;padding:60px;width:103%;height:100%;")),
+    flipdown(downto = "2021-04-21", id = "c1", theme = "light")), align = "center",
+  
+  
+  
+#  fluidRow(
+#    column(width = 12, 
+#           flipdown(downto = "2021-04-21", id = "c1", theme = "light"), align = "center", style = "background-color:#75a6cc;border-radius:2px;padding:10px")),
+  
+#  tags$head(
+#    tags$style(HTML("
+#    @media (max-width: 550px) {
+#      .flipdown.flipdown__theme-small {
+#  width: 100%;
+#  height: 70px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor {
+#  font-size: 2.2rem;
+#  margin-right: 3px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor,
+#.flipdown.flipdown__theme-small .rotor-leaf,
+#.flipdown.flipdown__theme-small .rotor-leaf-front,
+#.flipdown.flipdown__theme-small .rotor-leaf-rear,
+#.flipdown.flipdown__theme-small .rotor-top,
+#.flipdown.flipdown__theme-small .rotor-bottom,
+#.flipdown.flipdown__theme-small .rotor:after {
+#  width: 30px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group {
+#  padding-right: 10px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group:last-child {
+#  padding-right: 0px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group-heading:before {
+#  font-size: 0.8rem;
+#  height: 20px;
+#  line-height: 20px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+#.flipdown.flipdown__theme-small .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+#  left: 69px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group:nth-child(n+2):nth-child(-n+3):before {
+#  bottom: 13px;
+#  height: 8px;
+#  width: 8px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+#  bottom: 29px;
+#  height: 8px;
+#  width: 8px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-leaf-front,
+#.flipdown.flipdown__theme-small .rotor-top {
+#  line-height: 50px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-leaf,
+#.flipdown.flipdown__theme-small .rotor {
+#  height: 50px;
+#}
+
+#.flipdown.flipdown__theme-small .rotor-leaf-front,
+#.flipdown.flipdown__theme-small .rotor-leaf-rear,
+#.flipdown.flipdown__theme-small .rotor-top,
+#.flipdown.flipdown__theme-small .rotor-bottom,
+#.flipdown.flipdown__theme-small .rotor:after {
+#  height: 25px;
+#}
+#    "
+#    ))),                  
+  
   br(),
+   
   
 
     
