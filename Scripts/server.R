@@ -19,6 +19,7 @@ server <- function(input, output, session) {
   output$action6 <- renderUI("")  
   output$action7 <- renderUI("")  
 
+  uiOutput("body")
 }
 
 

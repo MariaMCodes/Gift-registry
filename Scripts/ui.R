@@ -10,7 +10,9 @@ library(rsconnect)
 
 
 ui <- fluidPage(
-
+  
+  # This is so everyhting is the same when viewed on a smaller screen ie phone
+  body <- dashboardBody( tags$head( tags$meta(name = "viewport", content = "width=850"), 
   
   ## Testing action buttons using bootstrap
   #  tags$a(href="#try", class="btn btn-default btn-sm", strong("Ami Paris"), style = "color:#487AA;background-color:#cbeaee;border-color:#cbeaee", align = "center"),
@@ -22,7 +24,7 @@ ui <- fluidPage(
     fillRow(
       div(style = "background-color:#75a6cc;border-radius:2px;padding:60px;width:103%;height:100%;"),
       div(style = "background-color:#75a6cc;border-radius:2px;padding:60px;width:103%;height:100%;")),
-    flipdown(downto = "2021-04-21", id = "c1", theme = "light")), align = "center",
+    flipdown(downto = "2021-04-21", id = "c1", theme = "light"), align = "center"),
   
 
   ## Old countdown panel codes
@@ -341,7 +343,7 @@ fluidRow(
       width = 45, # size
       appear = 100 # number of pixels before appearance
     ),
-    
+    ))
   )
 )
 
