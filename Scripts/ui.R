@@ -353,6 +353,9 @@ fluidRow(
 #.libPaths() 
 
 
+# website: https://mariaapps.shinyapps.io/gift_registry/
+
+
 #ui <- fluidPage(
 #  fluidRow(
 #    h3("Apple's Birthday Gift Registry", align = "center", style = "color:#487AA1"),
