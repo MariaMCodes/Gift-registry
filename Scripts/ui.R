@@ -1,23 +1,16 @@
-install.packages("shiny")
+
 library(shiny)
-install.packages("shinydashboard")
 library(shinydashboard)
-install.packages("bootstrap")
 library(bootstrap)
-install.packages("shinyWidgets")
 library(shinyWidgets)
-install.packages("RColorBrewer")
 library(RColorBrewer)
-install.packages("gotop")
 library(gotop)
-install.packages("flipdownr")
 library(flipdownr)
+library(rsconnect)
 
 
 ui <- fluidPage(
-  htmlOutput("links"),
-  htmlOutput("formattedText"),
-  
+
   
   ## Testing action buttons using bootstrap
   #  tags$a(href="#try", class="btn btn-default btn-sm", strong("Ami Paris"), style = "color:#487AA;background-color:#cbeaee;border-color:#cbeaee", align = "center"),
@@ -353,8 +346,11 @@ fluidRow(
 )
 
 
+# To see where the error is coming from
+#rsconnect::showLogs(appName="test",streaming=TRUE)
 
-rsconnect::showLogs(appName="test",streaming=TRUE)
+# To find file path
+#.libPaths() 
 
 
 #ui <- fluidPage(

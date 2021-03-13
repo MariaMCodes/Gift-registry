@@ -14,12 +14,11 @@ install.packages("bootstrap")
 library(bootstrap)
 install.packages(flipdownr)
 library("flipdownr")
-
+install.packages("rsconnect")
+library(rsconnect)
 
 
 ui <- fluidPage(
-  htmlOutput("links"),
-  htmlOutput("formattedText"),
   
   
   ## Testing action buttons using bootstrap
