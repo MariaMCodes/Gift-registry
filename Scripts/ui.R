@@ -163,7 +163,13 @@ ui <- fluidPage(
     br(),
     fluidRow(
       column(width = 1),
-      column(width = 4, img(src = "Ami_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+      column(width = 4, 
+             tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-jumper-item-16051786.aspx?size=19", 
+               tags$img(src = "Ami_black.jpg", height="140", width="130")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+             
+             
+             
+    #         img(src = "Ami_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       column(width = 6, p(strong("Description:"), "Ami de Coeur patch jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "XS", br(), strong("Price:"), "$389", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-jumper-item-16051786.aspx?size=19", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px", align = "left")),
