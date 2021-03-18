@@ -12,7 +12,7 @@ library(rsconnect)
 ui <- fluidPage(
   
   # This is so everyhting is the same when viewed on a smaller screen ie phone
-  body <- dashboardBody( tags$head( tags$meta(name = "viewport", content = "width=850"), 
+  body <- dashboardBody(tags$head(tags$meta(name = "viewport", content = "width=850"), 
   
   ## Testing action buttons using bootstrap
   #  tags$a(href="#try", class="btn btn-default btn-sm", strong("Ami Paris"), style = "color:#487AA;background-color:#cbeaee;border-color:#cbeaee", align = "center"),
