@@ -385,6 +385,7 @@ fluidRow(
     br(),
     br(),
     br(),
+    br(),
     
     #### using "gotop" package to scroll back to top
     use_gotop(), # add it inside the ui
