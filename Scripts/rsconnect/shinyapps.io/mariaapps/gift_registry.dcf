@@ -5,9 +5,9 @@ account: mariaapps
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3784177
-bundleId: 4361718
+bundleId: 4376094
 url: https://mariaapps.shinyapps.io/gift_registry/
-when: 1616040403.56619
+when: 1616336233.08825
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: app.R|table.xlsx
