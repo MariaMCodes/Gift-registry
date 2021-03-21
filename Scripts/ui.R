@@ -146,14 +146,22 @@ ui <- fluidPage(
     tags$a(href="#action2", class="btn btn-info btn-lg list-inline", strong("Apple"), style = "background-color:#f69696;border-color:#f66767"),
     tags$a(href="#action3", class="btn btn-info btn-lg list-inline", strong("Balmain"), style = "background-color:#f69696;border-color:#f66767"),
     tags$a(href="#action4", class="btn btn-info btn-lg list-inline", strong("Chanel"), style = "background-color:#f69696;border-color:#f66767"),
-    tags$a(href="#action5", class="btn btn-info btn-lg list-inline", strong("Dior"), style = "background-color:#f69696;border-color:#f66767"),
+    tags$a(href="#action5", class="btn btn-info btn-lg list-inline", strong("Dior"), style = "background-color:#f69696;border-color:#f66767")), align = "center"),
+    column(width = 1),
+    ),
+    
+    fluidRow(
+    column(width = 1),
+    column(width = 10,
+    div(class = "btn-toolbar pagination pagination-centered",  
     tags$a(href="#action6", class="btn btn-info btn-lg list-inline", strong("Gucci"), style = "background-color:#f69696;border-color:#f66767"),
     tags$a(href="#action7", class="btn btn-info btn-lg list-inline", strong("Hermes"), style = "background-color:#f69696;border-color:#f66767"),
     tags$a(href="#action8", class="btn btn-info btn-lg list-inline", strong("Maje"), style = "background-color:#f69696;border-color:#f66767"),
     tags$a(href="#action9", class="btn btn-info btn-lg list-inline", strong("Prada"), style = "background-color:#f69696;border-color:#f66767")), align = "center"),
     column(width = 1),
     ),
-  br(),
+    br(),
+  
   
   #### AMI PARIS
   uiOutput("action1"),
@@ -174,7 +182,7 @@ ui <- fluidPage(
     ##         img(src = "Ami_black.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
     
-      column(width = 6, p(strong("Description:"), "Ami de Coeur patch jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "XS", br(), strong("Price:"), "$389", br(), 
+      column(width = 6, p(strong("Description:"), "Ami de Coeur Patch Jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "XS", br(), strong("Price:"), "$389", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-jumper-item-16051786.aspx?size=19", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px", align = "left")),
     br(),
@@ -185,7 +193,7 @@ ui <- fluidPage(
                     tags$img(src = "Ami_navy.jpg", height="140", width="130")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
       # column(width = 4, img(src = "Ami_navy.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
-      column(width = 6, p(strong("Description:"), "Ami de Coeur patch jumper", br(), strong("Colour:"), "Navy", br(), strong("Size:"), "XS", br(), strong("Price:"), "$396", br(), 
+      column(width = 6, p(strong("Description:"), "Ami de Coeur Patch Jumper", br(), strong("Colour:"), "Navy", br(), strong("Size:"), "XS", br(), strong("Price:"), "$396", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-patch-jumper-item-15134774.aspx?size=22", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px", align = "left")),
     br(),
@@ -197,7 +205,7 @@ ui <- fluidPage(
       
     
       # column(width = 4, img(src = "Ami_brown.jpg", height="140", width="130"), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
-      column(width = 6, p(strong("Description:"), "Ami de Coeur jumper", br(), strong("Colour:"), "Cognac Brown", br(), strong("Size:"), "XS", br(), strong("Price:"), "$309", br(), 
+      column(width = 6, p(strong("Description:"), "Ami de Coeur Jumper", br(), strong("Colour:"), "Cognac Brown", br(), strong("Size:"), "XS", br(), strong("Price:"), "$309", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-jumper-item-16051859.aspx?size=19", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#f8c8c8;padding:13px;border-radius:2px", align = "left")),
     
@@ -223,17 +231,17 @@ ui <- fluidPage(
       column(width = 1),
       column(width = 4, 
             tags$a(href = "https://www.apple.com/au/shop/product/MU8F2ZA/A/apple-pencil-2nd-generation", 
-                   tags$img(src = "Pencil.jpg", height="60", width="80")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
+                   tags$img(src = "Pencil2.png", height="50", width="160")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
     
       column(width = 6, p(strong("Description:"), "Apple Pencil (2nd Generation)", br(), strong("Price:"), "$199", br(), 
                           tags$a(href = "https://www.apple.com/au/shop/product/MU8F2ZA/A/apple-pencil-2nd-generation", strong("Link to this item")), 
-                          target = "blank", style = "color:black"), style = "background-color:#f0e1d2;padding:13px;border-radius:2px", align = "left")),
+                          target = "blank", style = "color:black"), style = "background-color:#f0e1d2;padding:8px;border-radius:2px", align = "left")),
     br(),
     fluidRow(
       column(width = 1),
       column(width = 4, 
              tags$a(href = "https://www.apple.com/au/shop/product/MXT42FE/A/smart-folio-for-ipad-pro-11-inch-2nd-generation-black?afid=p238%7CsmC6Ye47V-dc_mtid_18707vxu38484_pcrid_55471952566_pgrid_15222165886_&cid=aos-au-kwgo-pla-btb--slid---product-MXT42-", 
-                    tags$img(src = "Smart_folio.jpg", height="100", width="100")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
+                    tags$img(src = "Smart_folio.jpg", height="100", width="140")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
       
       column(width = 6, p(strong("Description:"), "Smart Folio for iPad Pro (2nd Generation)", br(), strong("Colour:"), "Black", br(), strong("Size:"), "11-inch", br(), strong("Price:"), "$119", br(), 
                           tags$a(href = "https://www.apple.com/au/shop/product/MXT42FE/A/smart-folio-for-ipad-pro-11-inch-2nd-generation-black?afid=p238%7CsmC6Ye47V-dc_mtid_18707vxu38484_pcrid_55471952566_pgrid_15222165886_&cid=aos-au-kwgo-pla-btb--slid---product-MXT42-", strong("Link to this item")), 
@@ -254,7 +262,7 @@ ui <- fluidPage(
             tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-knit-jumper-item-16426609.aspx?size=18", 
                    tags$img(src = "Balmain_beige.jpg", height="140", width="130")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
       
-      column(width = 6, p(strong("Description:"), "Teen embossed button knit jumper", br(), strong("Colour:"), "Beige", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
+      column(width = 6, p(strong("Description:"), "Teen Embossed Button Knit Jumper", br(), strong("Colour:"), "Beige", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-knit-jumper-item-16426609.aspx?size=18", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#c2c1ce;padding:13px;border-radius:2px", align = "left")),
     br(),
@@ -264,7 +272,7 @@ ui <- fluidPage(
              tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-crewneck-jumper-item-16437943.aspx?size=18", 
                    tags$img(src = "Balmain_black.jpg", height="140", width="130")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"),  
              
-      column(width = 6, p(strong("Description:"), "Teen embossed button crewneck jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
+      column(width = 6, p(strong("Description:"), "Teen Embossed Button Crewneck Jumper", br(), strong("Colour:"), "Black", br(), strong("Size:"), "14", br(), strong("Price:"), "$405", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/kids/balmain-kids-teen-embossed-button-crewneck-jumper-item-16437943.aspx?size=18", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#c2c1ce;padding:13px;border-radius:2px", align = "left")),
     
@@ -285,7 +293,7 @@ fluidRow(
  
   column(width = 6, p(strong("Description:"), "Choker, Metal and Diamantés", br(), strong("Colour:"), "Gold and Crystal", br(), strong("Price:"), "$900", br(), 
                       tags$a(href = "https://www.chanel.com/au/fashion/p/AB6235B05696NC476/choker-metal-diamantes/", strong("Link to this item")), 
-                      target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:28px;border-radius:2px", align = "left")),
+                      target = "blank", style = "color:black"), style = "background-color:#f0f0f0;padding:28px;border-radius:2px", align = "left")),
 
 br(),
 fluidRow(
@@ -296,10 +304,32 @@ fluidRow(
   
   column(width = 6, p(strong("Description:"), "Earrings, Metal and Resin", br(), strong("Colour:"), "Gold and Green", br(), strong("Price:"), "$610", br(), 
                       tags$a(href = "https://www.chanel.com/au/fashion/p/AB6174B05583NC266/earrings-metal-resin/", strong("Link to this item")), 
-                      target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:23px;border-radius:2px", align = "left")),
+                      target = "blank", style = "color:black"), style = "background-color:#f0f0f0;padding:23px;border-radius:2px", align = "left")),
+
+    
+    #### DIOR
+    uiOutput("action5"), 
+    br(),
+    fluidRow(
+    column(width = 1),
+    column(h4(p(strong("DIOR"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
+
+
+br(),
+fluidRow(
+  column(width = 1),
+  column(width = 4, 
+         tags$a(href = "https://www.dior.com/en_au/products/couture-E1520PTCRS_D301-petit-cd-earrings-gold-finish-metal-and-white-resin-pearls", 
+                tags$img(src = "Dior_earrings.png", height="95", width="160")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+  
+  column(width = 6, p(strong("Description:"), "Petit CD Earrings", br(), strong("Colour:"), "Gold-Finish Metal and White Resin Pearls", br(), strong("Price:"), "US$580", br(), 
+                      tags$a(href = "https://www.dior.com/en_au/products/couture-E1520PTCRS_D301-petit-cd-earrings-gold-finish-metal-and-white-resin-pearls", strong("Link to this item")), 
+                      target = "blank", style = "color:black"), style = "background-color:#d4e6f4;padding:21px;border-radius:2px", align = "left")),
+
+
 
     #### GUCCI
-    uiOutput("action5"), 
+    uiOutput("action6"), 
     br(),
     fluidRow(
       column(width = 1),
@@ -313,12 +343,14 @@ fluidRow(
              tags$a(href = "https://www.farfetch.com/au/shopping/women/gucci-x-disney-mickey-print-oversized-t-shirt-item-15013860.aspx", 
                     tags$img(src = "Gucci.jpg", height="140", width="140")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
-      column(width = 6, p(strong("Description:"), "Disney Mickey print oversized T-shirt", br(), strong("Colour:"), "Off-White", br(), strong("Size:"), "XXS", br(), strong("Price:"), "$790", br(), 
+      column(width = 6, p(strong("Description:"), "Disney Mickey Print Oversized T-shirt", br(), strong("Colour:"), "Off-White", br(), strong("Size:"), "XXS", br(), strong("Price:"), "$790", br(), 
                           tags$a(href = "https://www.farfetch.com/au/shopping/women/gucci-x-disney-mickey-print-oversized-t-shirt-item-15013860.aspx", strong("Link to this item")), 
                           target = "blank", br(), br(), em("Unidays 10% off discount available"), style = "color:black"), style = "background-color:#bee3d9;padding:13px;border-radius:2px", align = "left")),
     
+    
+
     #### HERMES
-    uiOutput("action6"), 
+    uiOutput("action7"), 
     br(),
     fluidRow(
       column(width = 1),
@@ -330,9 +362,9 @@ fluidRow(
       column(width = 1),
       column(width = 4, 
              tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC18/", 
-                    tags$img(src = "H_etoupe.jpg", height="80", width="80")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+                    tags$img(src = "H_etoupe.jpg", height="100", width="110")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
-      column(width = 6, p(strong("Description:"), "O'Kelly Pendant, Small Model", br(), strong("Colour:"), "Étoupe", br(), strong("Price:"), "$435", br(), 
+      column(width = 6, p(strong("Description:"), "O'Kelly Pendant", br(), strong("Colour:"), "Étoupe", br(), strong("Size:"), "Small Model", br(), strong("Price:"), "$435", br(), 
                           tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC18/", strong("Link to this item")), 
                           target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:13px;border-radius:2px", align = "left")),
     br(),
@@ -340,9 +372,9 @@ fluidRow(
       column(width = 1),
       column(width = 4, 
              tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC37/", 
-                    tags$img(src = "H_gold.jpg", height="80", width="80")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+                    tags$img(src = "H_gold.jpg", height="100", width="110")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
-      column(width = 6, p(strong("Description:"), "O'Kelly Pendant, Small Model", br(), strong("Colour:"), "Gold", br(), strong("Price:"), "$435", br(), 
+      column(width = 6, p(strong("Description:"), "O'Kelly Pendant", br(), strong("Colour:"), "Gold", br(), strong("Size:"), "Small Model", br(), strong("Price:"), "$435", br(), 
                           tags$a(href = "https://www.hermes.com/au/en/product/o-kelly-pendant-small-model-H078852CC37/", strong("Link to this item")), 
                           target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:13px;border-radius:2px", align = "left")),
     br(),
@@ -350,7 +382,7 @@ fluidRow(
       column(width = 1),
       column(width = 4, 
              tags$a(href = "https://www.hermes.com/au/en/product/glenan-double-tour-bracelet-H071689Fv18T2/", 
-                    tags$img(src = "Bracelet.jpg", height="100", width="100")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+                    tags$img(src = "Bracelet.jpg", height="100", width="110")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
       
       column(width = 6, p(strong("Description:"), "Glenan Double Tour Bracelet", br(), strong("Colour:"), "Étoupe", br(), strong("Size:"), "T1", br(), strong("Price:"), "$435", br(), 
                           tags$a(href = "https://www.hermes.com/au/en/product/glenan-double-tour-bracelet-H071689Fv18T2/", strong("Link to this item")), 
@@ -366,8 +398,29 @@ fluidRow(
                           tags$a(href = "https://www.hermes.com/au/en/product/osmanthe-yunnan-eau-de-toilette-V21069/", strong("Link to this item")), 
                           target = "blank", style = "color:black"), style = "background-color:#f8cda2;padding:18px;border-radius:2px", align = "left")),
     
+    
+    #### MAJE
+    uiOutput("action8"),  
+    br(),
+    fluidRow(
+   column(width = 1),
+    column(h4(p(strong("MAJE"), style = "text-align:center;color:black")), width = 10, style = "background-color:#cbeaee;border-radius:2px")),
+
+
+br(),
+fluidRow(
+  column(width = 1),
+  column(width = 4, 
+         tags$a(href = "https://www.davidjones.com/maje-jackets-coats/23738969/MFPOU00476COAT.html", 
+                tags$img(src = "Maje_coat.jpg", height="120", width="140")), align = "center", style = "background-color:white;padding:18px;border-radius:2px"), 
+  
+  column(width = 6, p(strong("Description:"), "Double Face Cropped Coat", br(), strong("Colour:"), "Camel", br(), strong("Size:"), "36", br(), strong("Price:"), "$895", br(), 
+                      tags$a(href = "https://www.davidjones.com/maje-jackets-coats/23738969/MFPOU00476COAT.html", strong("Link to this item")), 
+                      target = "blank", style = "color:black"), style = "background-color:#f8f2cc;padding:23px;border-radius:2px", align = "left")),
+
+
     #### PRADA
-    uiOutput("action7"),  
+    uiOutput("action9"),  
     br(),
     fluidRow(
       column(width = 1),
